@@ -6,6 +6,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  outline: 0;
 }
 
 html,
@@ -32,6 +33,7 @@ body {
   border-right: 1px solid #2f3336;
   height: 100%;
   padding: 25px;
+  overflow: auto;
 }
 
 .tweet-settings h3 {
@@ -40,6 +42,120 @@ body {
   border-bottom: 1px solid #2f3336;
   padding-bottom: 20px;
   margin-bottom: 20px;
+}
+
+.tweet-settings ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.tweet-settings label {
+  font-size: 15px;
+  margin-bottom: 5px;
+  display: block;
+  color: #6e767d;
+}
+
+.tweet-settings .input {
+  width: 100%;
+  background: transparent;
+  border-bottom: 1px solid #2f3336;
+  color: #fff;
+  padding: 10px 0 15px;
+  font-size: 15px;
+}
+
+.tweet-settings .input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.tweet-settings .input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.tweet-settings .input::-ms-input-placeholder {
+  color: #fff;
+}
+
+.tweet-settings .input::placeholder {
+  color: #fff;
+}
+
+.tweet-settings .input:focus {
+  border-color: #4e555a;
+}
+
+.tweet-settings select {
+  width: 100%;
+  background: transparent;
+  border-bottom: 1px solid #2f3336;
+  color: #fff;
+  padding: 10px 0 15px;
+  font-size: 15px;
+}
+
+.tweet-settings select option {
+  color: #111;
+}
+
+.tweet-settings select::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.tweet-settings select:-ms-input-placeholder {
+  color: #fff;
+}
+
+.tweet-settings select::-ms-input-placeholder {
+  color: #fff;
+}
+
+.tweet-settings select::placeholder {
+  color: #fff;
+}
+
+.tweet-settings select:focus {
+  border-color: #4e555a;
+}
+
+.tweet-settings button {
+  width: 100%;
+  height: 40px;
+  border-radius: 3px;
+  font-size: 16px;
+  color: #fff;
+  background: #1da1f2;
+  cursor: pointer;
+}
+
+.tweet-settings .textarea {
+  width: 100%;
+  background: transparent;
+  border-bottom: 1px solid #2f3336;
+  color: #fff;
+  padding: 10px 0 15px;
+  font-size: 15px;
+  line-height: 1.5;
+  resize: none;
+}
+
+.tweet-settings .textarea::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.tweet-settings .textarea:-ms-input-placeholder {
+  color: #fff;
+}
+
+.tweet-settings .textarea::-ms-input-placeholder {
+  color: #fff;
+}
+
+.tweet-settings .textarea::placeholder {
+  color: #fff;
+}
+
+.tweet-settings .textarea:focus {
+  border-color: #4e555a;
 }
 
 .tweet-container {
@@ -51,6 +167,7 @@ body {
   width: 600px;
   margin: 25px auto;
   padding: 0 16px;
+  background: #000;
 }
 
 .tweet-author {
@@ -101,6 +218,11 @@ body {
   font-size: 23px;
   line-height: 28px;
   color: #fff;
+  overflow: hidden;
+}
+
+.tweet-content p span {
+  color: #1da1f2;
 }
 
 .tweet-stats {
